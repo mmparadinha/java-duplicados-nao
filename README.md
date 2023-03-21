@@ -1,18 +1,14 @@
-## Getting Started
+# Enunciado
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Escreva um código que encontre os elementos em comum que existem em dois arrays e imprima os nomes dos itens em comum! Exemplo:
 
-## Folder Structure
+String[] arr1 = Morango, Uva, Acerola, Manga
+<br />
+String[] arr2 = Pêra, Caju, Morango, Kiwi
 
-The workspace contains two folders by default, where:
+resultado = Morango
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+# Resolução
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Usa um loop duplo para procurar cada palavra do primeiro array no segundo. Compara igualdade utilizando Object.equals e, em caso positivo, adiciona em um array infinito, List (pois não temos controle ordenado das posições para construir o resultado em um array normal String[])
